@@ -1,0 +1,10 @@
+{
+    "total_urls": 235370,
+    "unique_domains": 175509,
+    "phishing_urls": 100520,
+    "legitimate_urls": 134850,
+    "phishing_percentage": 42.71,
+    "legitimate_percentage": 57.29,
+    "canonical_features": 17,
+    "feature_type": "URL-derived structural features"
+}

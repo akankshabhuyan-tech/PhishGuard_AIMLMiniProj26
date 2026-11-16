@@ -1,0 +1,69 @@
+{
+    "project": "PhishGuard",
+    "model": "XGBoost",
+    "dataset": "PhiUSIIL Phishing URL Dataset",
+    "feature_count": 17,
+    "features": [
+        "URLLength",
+        "DomainLength",
+        "IsDomainIP",
+        "TLDLength",
+        "NoOfSubDomain",
+        "HasObfuscation",
+        "NoOfObfuscatedChar",
+        "ObfuscationRatio",
+        "NoOfLettersInURL",
+        "LetterRatioInURL",
+        "NoOfDegitsInURL",
+        "DegitRatioInURL",
+        "NoOfEqualsInURL",
+        "NoOfQMarkInURL",
+        "NoOfAmpersandInURL",
+        "NoOfOtherSpecialCharsInURL",
+        "SpacialCharRatioInURL"
+    ],
+    "threshold": 0.4,
+    "validation": {
+        "accuracy": 0.865057065420096,
+        "phishing_precision": 0.9367788841473051,
+        "phishing_recall": 0.7192524725441417,
+        "phishing_f1": 0.8137291916938391,
+        "roc_auc": 0.8926423331136362
+    },
+    "test": {
+        "model": "XGBoost",
+        "threshold": 0.4,
+        "accuracy": 0.8789753504108265,
+        "phishing_precision": 0.9317654852600199,
+        "phishing_recall": 0.7932882120699379,
+        "phishing_f1": 0.856968773800457,
+        "roc_auc": 0.9150572293111622,
+        "confusion_matrix": [
+            [
+                11252,
+                2932
+            ],
+            [
+                824,
+                16027
+            ]
+        ]
+    },
+    "split_sizes": {
+        "training": 164118,
+        "validation": 40217,
+        "testing": 31035
+    },
+    "confusion_matrix_order": [
+        "Phishing",
+        "Legitimate"
+    ],
+    "notes": [
+        "Class 0 represents phishing.",
+        "Class 1 represents legitimate.",
+        "Threshold was selected using validation data.",
+        "Test set was reserved for final evaluation.",
+        "Splits were separated by registered domain.",
+        "Earlier test error analysis influenced extractor development; an independent external dataset is still recommended."
+    ]
+}

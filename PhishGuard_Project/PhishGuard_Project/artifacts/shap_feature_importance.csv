@@ -1,0 +1,18 @@
+Feature,Mean Absolute SHAP
+URLLength,2.276996
+DomainLength,1.5855427
+NoOfOtherSpecialCharsInURL,1.1224108
+NoOfDegitsInURL,0.5311548
+NoOfSubDomain,0.50073653
+TLDLength,0.26773384
+NoOfLettersInURL,0.25413746
+LetterRatioInURL,0.15193361
+DegitRatioInURL,0.112479895
+SpacialCharRatioInURL,0.04748875
+NoOfQMarkInURL,0.0018073523
+HasObfuscation,0.0
+IsDomainIP,0.0
+ObfuscationRatio,0.0
+NoOfObfuscatedChar,0.0
+NoOfEqualsInURL,0.0
+NoOfAmpersandInURL,0.0

@@ -1,0 +1,6 @@
+Input URL,Prediction,Phishing Probability (%),Threshold
+google.com,Legitimate,16.8316,0.4
+http://google.com,Legitimate,16.8316,0.4
+https://google.com,Legitimate,16.8316,0.4
+https://www.google.com,Legitimate,16.8316,0.4
+http:// google.com,Legitimate,16.8316,0.4
